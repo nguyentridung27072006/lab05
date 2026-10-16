@@ -1,0 +1,114 @@
+/*
+  File: layout.css
+  Task: Lab 05 - Layout HTML Elements
+  Description: Layout styles (box model, floats, positioning, pseudo selectors)
+  Author: Dũng
+  Note: Loaded after lab04.css, so rules here override lab04.css when they conflict.
+*/
+
+
+aside:hover {
+  display: block;
+}
+
+
+.menu {
+  display: inline-block;
+}
+
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+
+
+aside {
+  border: 1px solid gray;
+  margin: 1em;
+  padding: 1em;
+  background-image: url("images/fade.jpg");
+  width: 30%;
+  float: right;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+header {
+  border: 1px solid darkgray;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: lightgray;
+  text-align: center;
+}
+
+footer {
+  border-top: 4px double navy;
+  clear: both;
+}
+
+
+
+#lists {
+  float: left;
+}
+
+table {
+  margin: auto;
+}
+
+#tables {
+  float: right;
+}
+
+
+#hyperlinks {
+  clear: both;
+  float: left;
+}
+
+
+#images {
+  float: right;
+}
+
+figure {
+  border: 2px solid #ccc;
+}
+
+
+#lists, #tables, #hyperlinks, #images {
+  text-align: center;
+  width: 50%;
+}
+
+
+ol, ul, dl {
+  text-align: left;
+}
+
+
+article {
+  min-width: 30em;
+}
+
+footer p {
+  display: inline-block;
+  width: 33%;
+}
+
+footer p:first-child {
+  float: left;
+}
+
+footer p:nth-child(2) {
+  text-align: center;
+}
+
+footer p:last-child {
+  float: right;
+  text-align: right;
+}
